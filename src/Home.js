@@ -95,7 +95,6 @@ function Home() {
     };
 
     function one() {
-        console.log("verde")
         if(noise){
             let audio = document.getElementById("clip1");
             audio.play()
@@ -106,7 +105,6 @@ function Home() {
     };
 
     function dos() {
-        console.log("rojo")
         if(noise){
             let audio = document.getElementById("clip2");
             audio.play();
@@ -117,7 +115,6 @@ function Home() {
     };
 
     function tres() {
-        console.log("amarillo")
         if(noise){
             let audio = document.getElementById("clip3");
             audio.play();
@@ -131,7 +128,6 @@ function Home() {
     };
 
     function cuatro() {
-        console.log("azul")
         if(noise){
             let audio = document.getElementById("clip4");
             audio.play();
@@ -157,6 +153,7 @@ function Home() {
 
     function ftopLeft() {
         if(on) {
+            on = false;
             playerOrder.push(1);
             check();
             one();
@@ -165,11 +162,13 @@ function Home() {
                     clearColor();
                 }, 200);
             };
+            on = true
         };
     };
 
     function ftopRight() {
         if(on) {
+            on = false;
             playerOrder.push(2);
             check();
             dos();
@@ -178,11 +177,13 @@ function Home() {
                     clearColor();
                 }, 200);
             };
+            on = true
         };
     };
 
     function fbottomLeft() {
         if(on) {
+            on = false
             playerOrder.push(3);
             check();
             tres();
@@ -191,11 +192,13 @@ function Home() {
                     clearColor();
                 }, 200);
             };
+            on = true;
         };
     };
 
     function fbottomRight() {
         if(on) {
+            on = false;
             playerOrder.push(4);
             check();
             cuatro();
@@ -204,6 +207,7 @@ function Home() {
                     clearColor();
                 }, 200);
             };
+            on = true;
         };
     };
 
@@ -295,6 +299,7 @@ function Home() {
                 </div>
                 
             </div>
+            <div className="simon">
             <div id="topleft" onClick={() => ftopLeft()}></div>
             <div id="topright" onClick={() => ftopRight()}></div>
             <div id="bottomleft" onClick={() => fbottomLeft()}></div>
@@ -313,6 +318,7 @@ function Home() {
                 <div className="text2">
                     COUNT
                 </div>
+            </div>
             </div>
             <div className="Der">
                 {language === "spanish" ?

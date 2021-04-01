@@ -11,9 +11,16 @@
     background-size: cover;
 }
 
+.simon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 16vw;
+  margin-right: 16vw;
+}
+
 .Izq {
   width: 18vw;
-  margin-right: 56vw;
   padding: 2vw;
   background-color: #f0f0f0;
   box-shadow: 5px 5px 10px black;
@@ -217,7 +224,6 @@
 }
   
 #inner-circle {
-  position: absolute;
   background: grey;
   border-radius: 50%;
   height: 490px;
@@ -227,6 +233,7 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  z-index: 1;
 }
 
 
