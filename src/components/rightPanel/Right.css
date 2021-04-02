@@ -1,9 +1,13 @@
 .Der {
-  width: 18vw;
-  padding: 2vw;
-  height: 100vh;
+  width: 22vw;
+  padding: 1.5vw;
+  height: 93.5vh;
   background-color: #f0f0f0;
   box-shadow: -5px 5px 10px black;
+}
+
+.Der h3 {
+  margin-top: -5px;
 }
 
 .skills {

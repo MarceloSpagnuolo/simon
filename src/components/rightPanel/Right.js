@@ -16,8 +16,7 @@ function Right({ language }) {
             El objetivo del juego es seguir la secuencia generada por la
             consola.
             <br />
-            Para ganar hay que completar 20 turnos, o sea, hay que recordar la
-            secuencia de 20 posiciones.
+            Para ganar hay que completar 20 turnos.
             <br />
             El juego cuenta con el modo estricto en donde si se comete un error
             se reinicia el juego y se comienza de cero y el modo normal en donde

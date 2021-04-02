@@ -1,11 +1,9 @@
 .Izq {
-  width: 18vw;
-  padding: 2vw;
+  width: 22vw;
+  padding: 1.5vw;
   background-color: #f0f0f0;
   box-shadow: 5px 5px 10px black;
-  border-radius: 10px;
-  height: 100vh;
-  overflow-y: scroll;
+  height: 93.5vh;
 }
 
 .Izq h1 {
@@ -13,7 +11,7 @@
 }
 
 .Izq img {
-  width: 18vw;
+  width: 15.5vw;
 }
 
 .Izq h3 {
@@ -23,6 +21,8 @@
 .Izq p {
   margin-top: -2px;
   margin-bottom: 60px;
+  text-align: justify;
+  width: 100%;
 }
 
 .lengua {
