@@ -4,6 +4,8 @@ import clip1 from "../../assets/simonSound1.mp3";
 import clip2 from "../../assets/simonSound2.mp3";
 import clip3 from "../../assets/simonSound3.mp3";
 import clip4 from "../../assets/simonSound4.mp3";
+import error from "../../assets/error.mp3";
+import gana from "../../assets/win.mp3";
 import { useCounter, useGetSet } from "react-use";
 import Left from "../leftPanel/Left";
 import Right from "../rightPanel/Right";
@@ -39,6 +41,8 @@ function Home() {
   const [displayText, setDisplayText] = useState("");
   const [speed, setSpeed] = useGetSet(800);
   const [bitRate, setBitRate] = useGetSet(1);
+  const [audioWin, setAudioWin] = useState(useRef());
+  const [audioError, setAudioError] = useState(useRef());
 
   function power(e) {
     setOn(e.target.checked);
@@ -114,7 +118,7 @@ function Home() {
       setIsCpuTurn(true);
       miss();
     } else {
-      if (index === 19) {
+      if (index === 3) {
         win();
       } else if (getTurn() === getPlayerSequence().length) {
         setIsCpuTurn(true);
@@ -127,7 +131,10 @@ function Home() {
     setDisplayText("NO!");
     setTimeout(() => {
       setDisplayText("");
-    }, 1200);
+    }, 2200);
+    setTimeout(() => {
+      audioError.current.play();
+    }, 200);
     flashColor();
     if (getStrict()) {
       setTimeout(() => {
@@ -135,19 +142,31 @@ function Home() {
         start();
       }, 1500);
     } else {
-      resetCurrentTick();
-      setIsCpuTurn(true);
-      setPlayerSequence([]);
-      setIntervalTick(setInterval(ticks, speed()));
+      setTimeout(() => {
+        resetCurrentTick();
+        setIsCpuTurn(true);
+        setPlayerSequence([]);
+        setIntervalTick(setInterval(ticks, speed()));
+      }, 1500);
     }
   }
 
   function win() {
     setDisplayText("WIN!");
+    let ganador = setInterval(() => {
+      flashColor();
+      setTimeout(() => {
+        clearColor();
+      }, 501);
+    }, 1000);
     setTimeout(() => {
       setDisplayText("");
       setIsStarted(false);
-    }, 800);
+      clearInterval(ganador);
+    }, 12000);
+    setTimeout(() => {
+      audioWin.current.play();
+    }, 200);
   }
 
   function next() {
@@ -180,6 +199,12 @@ function Home() {
       </audio>
       <audio id="clip4" ref={audiosRef[3]}>
         <source src={clip4}></source>
+      </audio>
+      <audio id="win" ref={audioWin}>
+        <source src={gana}></source>
+      </audio>
+      <audio id="error" ref={audioError}>
+        <source src={error}></source>
       </audio>
 
       <Left
