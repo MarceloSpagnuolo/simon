@@ -1,0 +1,47 @@
+.Izq {
+  width: 18vw;
+  padding: 2vw;
+  background-color: #f0f0f0;
+  box-shadow: 5px 5px 10px black;
+  border-radius: 10px;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.Izq h1 {
+  font-size: 4rem;
+}
+
+.Izq img {
+  width: 18vw;
+}
+
+.Izq h3 {
+  margin-top: -55px;
+}
+
+.Izq p {
+  margin-top: -2px;
+  margin-bottom: 60px;
+}
+
+.lengua {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.lengua div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lengua img {
+  width: 4vw;
+  border-radius: 50%;
+}
+
+.lengua img:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px red;
+}

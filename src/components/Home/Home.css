@@ -1,14 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Original+Surfer&effect=emboss");
 
-
 .Container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: url("https://image.freepik.com/vector-gratis/fondo-pintado-abstracto_23-2148545019.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("https://image.freepik.com/vector-gratis/fondo-pintado-abstracto_23-2148545019.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .simon {
@@ -19,73 +18,10 @@
   margin-right: 16vw;
 }
 
-.Izq {
-  width: 18vw;
-  padding: 2vw;
-  background-color: #f0f0f0;
-  box-shadow: 5px 5px 10px black;
-  border-radius: 10px;
-  height: 100vh;
-  overflow-y: scroll;
-}
-
-.Der {
-  width: 18vw;
-  padding: 2vw;
-  height: 100vh;
-  background-color: #f0f0f0;
-  box-shadow: -5px 5px 10px black;
-}
-
-.Izq h1 {
-  font-size: 4rem;
-}
-
-.Izq img {
-  width: 18vw;
-}
-
-.Izq h3 {
-  margin-top: -55px;
-}
-
-.Izq p {
-  margin-top: -2px;
-  margin-bottom: 60px;
-}
-
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 100%;
-  margin-top: -25px;
-}
-
-.skills img {
-  width: 5vw;
-  padding: 1vw;
-}
-
-.tecno:hover {
-  transition: all .3s;
-  background-color: goldenrod;
-}
-
-.skills span {
-  margin-top: -15px;
-}
-
-.tecno {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .toggle {
-  margin-left: 60px; 
+  margin-left: 60px;
 }
-  
+
 .button {
   border-radius: 50% !important;
   font-size: 2em;
@@ -93,40 +29,40 @@
   margin-top: 100px;
   margin-left: 57px;
 }
-  
+
 #switches {
   position: absolute;
-  font-family: 'Original Surfer', cursive;
+  font-family: "Original Surfer", cursive;
   margin-left: 54px;
   margin-top: 110px;
 }
-  
+
 .text2 {
   position: absolute;
-  font-family: 'Original Surfer', cursive;
+  font-family: "Original Surfer", cursive;
   margin-left: 196px;
   margin-top: 384px;
 }
-  
+
 .text1 {
   position: absolute;
-  font-family: 'Original Surfer', cursive;
+  font-family: "Original Surfer", cursive;
   margin-left: 90px;
   margin-top: 245px;
 }
-  
+
 .text1 span:last-child {
   padding-left: 155px;
 }
-  
+
 #title {
-  font-family: 'Original Surfer', cursive;
+  font-family: "Original Surfer", cursive;
   position: absolute;
   font-size: 80px;
   margin-left: 64px;
   margin-top: 70px;
 }
-  
+
 .turn {
   position: absolute;
   background: #330000;
@@ -145,7 +81,7 @@
 .Off {
   color: #330000;
 }
-  
+
 #outer-circle {
   background: #385a94;
   border-radius: 50%;
@@ -158,7 +94,7 @@
   margin-top: 60px;
   box-shadow: 8px 8px 15px 5px #888888;
 }
-  
+
 #topleft {
   position: absolute;
   height: 400px;
@@ -174,7 +110,7 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
-  
+
 #topright {
   position: absolute;
   height: 400px;
@@ -190,7 +126,7 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
-  
+
 #bottomleft {
   position: absolute;
   height: 400px;
@@ -206,7 +142,7 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
-  
+
 #bottomright {
   position: absolute;
   height: 400px;
@@ -222,7 +158,7 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
-  
+
 #inner-circle {
   background: grey;
   border-radius: 50%;
@@ -234,26 +170,4 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   z-index: 1;
-}
-
-
-.lengua {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.lengua div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.lengua img {
-  width: 4vw;
-  border-radius: 50%;
-}
-
-.lengua img:hover {
-  cursor: pointer;
-  box-shadow: 0 0 10px red;
 }

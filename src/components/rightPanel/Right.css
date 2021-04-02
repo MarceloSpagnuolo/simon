@@ -1,0 +1,35 @@
+.Der {
+  width: 18vw;
+  padding: 2vw;
+  height: 100vh;
+  background-color: #f0f0f0;
+  box-shadow: -5px 5px 10px black;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: -25px;
+}
+
+.skills img {
+  width: 5vw;
+  padding: 1vw;
+}
+
+.tecno:hover {
+  transition: all 0.3s;
+  background-color: goldenrod;
+}
+
+.skills span {
+  margin-top: -15px;
+}
+
+.tecno {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
