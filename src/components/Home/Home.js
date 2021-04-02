@@ -118,7 +118,7 @@ function Home() {
       setIsCpuTurn(true);
       miss();
     } else {
-      if (index === 3) {
+      if (index === 19) {
         win();
       } else if (getTurn() === getPlayerSequence().length) {
         setIsCpuTurn(true);
